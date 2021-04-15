@@ -1,0 +1,390 @@
+@import './reset.scss';
+@import './common.scss';
+
+html,body {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  background-color: #ffee5f;
+}
+
+#app {
+  height: 100%;
+}
+
+#p1, #p2, #p3 {
+  transition: all .5s;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: none;
+  background-image: url("../../assets/img/bg.jpg");
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+}
+
+.wpr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.dialog-sty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#galleryBtn img ,#cameraBtn img{
+  width: 3.04rem;
+  height: .94rem;
+}
+
+#cameraBtn img {
+  margin-bottom: .48rem;
+  margin-top: 1rem;
+}
+
+#p1 {
+  overflow: hidden;
+  position: relative;
+  min-height: 100%;
+  height: auto;
+  .head{
+    text-align: center;
+    margin-top: 0.98rem;
+    img {
+      height: 0.72rem;
+    }
+  }
+  .content {
+    position: relative;
+    width: 6rem;
+    height: 6rem;
+    margin: 1.48rem auto 0.88rem;
+  }
+  .bannerBox{
+    width: 100%;
+    height:100%;
+    box-sizing: border-box;
+    border:0.04rem solid #000;
+    background: #ffffff;
+    position: absolute;
+    z-index:9;
+    .banner {
+      width: 5.64rem;
+      position: absolute;
+      left:0.14rem;
+      top:0.14rem;
+    }
+  }
+  .cartoon{
+    position: absolute;
+  }
+  .cartoon1{
+    width: 1.47rem;
+    left:0;
+    top:-0.97rem;
+    //animation: dance 1s linear 1s;
+  }
+  .cartoon2{
+    width: 1.26rem;
+    left: 1.5rem;
+    top:-1.18rem;
+    //animation: dance 1s linear 2s;
+  }
+  .cartoon3{
+    width: 0.74rem;
+    left: 2.78rem;
+    top: -0.44rem;
+    //animation: dance 1s linear 3s;
+  }
+  .cartoon4{
+    width: 1.27rem;
+    left: 3.58rem;
+    top: -0.95rem;
+    //animation: dance 1s linear 4s;
+  }
+  .cartoon5{
+    width: 1.14rem;
+    right:0;
+    top: -0.65rem;
+  }
+
+  .foot {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 3.6rem;
+    height: 0.98rem;
+    margin: 0 auto;
+  }
+  .startBtn {
+    width: 3.6rem;
+    height: 0.98rem;
+  }
+  .awart{
+    width: 1.07rem;
+    position: absolute;
+    right:-0.03rem;
+    bottom:-0.03rem;
+  }
+
+  aside{
+    margin-top: 0.94rem;
+    height:3.04rem;
+    text-align: center;
+    position: relative;
+  }
+  .introduce {
+    width: 4.4rem;
+  }
+  .corner{
+    position: absolute;
+    width: 0.62rem;
+    right: 0.56rem;
+    bottom: 0.46rem;
+  }
+}
+
+#p2 {
+  .head {
+    width: 7rem;
+    height: 7rem;
+    border: .04rem #333333 solid;
+    margin-top: 0.3rem;
+    background-color: rgba(255,255,255,0.6);
+    overflow: hidden;
+  }
+  .dragTip {
+    position: absolute;
+    width: 1.11rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 66;
+  }
+  .dragArea {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: all .3s;
+    opacity: 0;
+  }
+  .selectArea {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 68;
+  }
+
+  .content {
+    width: 5.49rem;
+    margin: .18rem auto 1rem;
+  }
+  .scaleTip {
+    width: 2.3rem;
+    display: block;
+    margin: 0 auto;
+  }
+  .titleTip {
+    width: 5.61rem;
+    margin-top: 0.58rem;
+  }
+
+  .foot {
+    text-align: center;
+    img {
+      width: 2.95rem;
+    }
+    img:nth-child(1) {
+      margin-right: .45rem;
+    }
+  }
+
+}
+
+#p3 {
+  .head {
+    width: 7rem;
+    height: 7rem;
+    border: .04rem #333333 solid;
+    position: relative;
+    overflow: hidden;
+    margin-top: 0.3rem;
+  }
+  .renderImgWpr {
+    width: 7rem;
+    height: 6rem;
+    padding: 0;
+    border: .04rem solid #222;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+  .logoGroup {
+    width: 100%;
+    height: 1.1rem;
+    margin-bottom: .35rem;
+    padding: .12rem .12rem .12rem .24rem;
+    box-sizing: border-box;
+    background: #fff;
+    position: relative;
+
+  }
+  .p4Comics {
+    width: 7rem;
+    height: 6rem;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .uPCanvas {
+    width: 100%;
+    height: 100%;
+  }
+  .filtersBox{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: 9;
+    display: none;
+    &.filtersActive{
+      display: block;
+    }
+  }
+  .filter{
+    line-height: 0;
+    position: absolute;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .drapTools{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    left:0;
+    top:0;
+    .anchor{
+      width: 0.54rem;
+      height: 0.54rem;
+      position: absolute;
+    }
+    .hat-anchor-rota{
+      background: url("../../assets/img/scaleBtn.png") no-repeat;
+      background-size: contain;
+      right:-0.27rem;
+      top:-0.27rem;
+    }
+  }
+  .filtersBox1 .border, .filtersBox2 .border{
+      width: 100%;
+      height: 100%;
+  }
+
+  .filtersBox3{
+    .border{
+      width: 6.43rem;
+      height: 6.1rem;
+      left:0.28rem;
+      top:0.45rem;
+    }
+  }
+
+  .content {
+    margin-top: 0.5rem;
+
+    .modsBox{
+      width: 7.5rem;
+      height: 2.44rem;
+      overflow: hidden;
+    }
+  }
+
+  .mods {
+    width: 7.5rem;
+    height: 2.44rem;
+    padding-bottom: 0.2rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    /*解决ios上滑动不流畅*/
+    -webkit-overflow-scrolling: touch;
+    ::-webkit-scrollbar { display: none; }
+    .modsWpr {
+      white-space: nowrap;
+      width: 10.11rem;
+      height: 1.56rem;
+      line-height: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+    span {
+      width: 1.56rem;
+      height: 1.56rem;
+      box-sizing: border-box;
+      border: 0.08rem solid transparent;
+      margin-right: .07rem;
+      border-radius: 0.12rem;
+      overflow: hidden;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    span:nth-of-type(1){
+      margin-left: 0.2rem;
+    }
+    span:nth-of-type(6){
+      margin-right: 0.2rem;
+    }
+
+    .thumbActive {
+      border: 0.08rem solid #fda134;
+    }
+    ::-webkit-scrollbar {
+      width: 0;
+    }
+    ::-webkit-scrollbar-track {
+      width: 0;
+    }
+    ::-webkit-scrollbar-thumb {
+      width: 0;
+    }
+  }
+
+  .btns {
+    .otherBtn {
+      margin-top: 0.6rem;
+      height: 0.98rem;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 2.95rem;
+      }
+      img:nth-child(1) {
+        margin-right: .52rem;
+      }
+    }
+    .saveOutApp {
+      width: 2.95rem;
+    }
+    .saveBtn {
+      width: 3.12rem;
+    }
+  }
+}

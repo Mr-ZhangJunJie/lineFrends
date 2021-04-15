@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>LINE FRIENDS</title>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="-1"/>
+    <link rel="shortcut icon" href="https://foodie.snow.me/img/foodie_favicon_v2.ico" type="image/x-icon"/>
+    <!--<script src="https://cdn.bootcss.com/vConsole/3.2.2/vconsole.min.js"></script>-->
+</head>
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?9bbf8aeea16d4a94563d86e922dd0438";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<!--<script>-->
+<!--// new VConsole();-->
+<!--</script>-->
+<body>
+<script type="text/javascript">
+    !function (e, t) {
+        var n = e.documentElement, i = "orientationchange" in window ? "orientationchange" : "resize",
+            d = (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream, function () {
+                var t = n.clientWidth;
+                t && (t >= 750 ? (t = 750, e.body.style.width = "750px") : e.body.style.width = t + "px", n.style.fontSize = 100 * (t / 750) + "px", n.dataset.width = t, n.dataset.percent = 100 * (t / 750))
+            });
+        d(), e.documentElement.classList.add("iosx" + t.devicePixelRatio), e.addEventListener && t.addEventListener(i, d, !1)
+    }(document, window)
+</script>
+<!--<navigator id="nav">-->
+<!--一键漫画-->
+<!--<div class="closeBtn"></div>-->
+<!--</navigator>-->
+<section id="app">
+    <!-- p1 start -->
+    <div id="p1" class="page" style="position:relative;z-index:2;display: none;">
+        <header class="head">
+            <img data-src="p1_title.png" alt="">
+        </header>
+        <div class="content">
+            <div class="bannerBox">
+                <img data-src="banner1.jpg" alt="banner1" class="banner">
+            </div>
+            <img data-src="cartoon1.png" alt="卡通1" class="cartoon cartoon1">
+            <img data-src="cartoon2.png" alt="卡通2" class="cartoon cartoon2">
+            <img data-src="cartoon3.png" alt="卡通3" class="cartoon cartoon3">
+            <img data-src="cartoon4.png" alt="卡通4" class="cartoon cartoon4">
+            <img data-src="cartoon5.png" alt="卡通5" class="cartoon cartoon5">
+        </div>
+        <footer class="foot">
+            <img data-src="start.png" class="startBtn" alt="">
+            <img data-src="awart.png" class="awart" alt="">
+        </footer>
+        <aside>
+            <img class="introduce" data-src="introduce.png">
+            <img class="corner" data-src="corner.png">
+        </aside>
+    </div>
+    <!-- p1 end -->
+    <ul id="p2" class="page" style="position:relative;z-index:2;display: none">
+        <li class="wpr">
+            <header class="head p-r">
+                <img data-src="common/p2UpTip.png" class="dragTip" alt="">
+                <div class="dragArea" id="dragArea">
+                    <img id="dragImg" class="dragImg" style="width:100%" alt="">
+                </div>
+                <div id="selectArea" class="selectArea"></div>
+            </header>
+            <div class="content">
+                <img data-src="scaleTip.png" alt="" class="scaleTip">
+                <img data-src="titleTip.png" alt="" class="titleTip">
+            </div>
+            <footer class="foot">
+                <img data-src="common/p2_reUpload.png" class="reUpBtn" alt="">
+                <img data-src="common/p2_submit.png" class="upBtn" alt="">
+            </footer>
+        </li>
+    </ul>
+
+    <ul id="p3" class="page" style="position:relative;z-index:2;display: none">
+        <li class="wpr">
+            <header class="head">
+                <canvas class="uPCanvas"></canvas>
+                <div class="filtersBox filtersBox1 filtersActive"></div>
+                <div class="filtersBox filtersBox2"></div>
+                <div class="filtersBox filtersBox3"></div>
+                <div class="filtersBox filtersBox4"></div>
+                <div class="filtersBox filtersBox5"></div>
+                <div class="filtersBox filtersBox6"></div>
+            </header>
+            <ul class="content">
+                <li class="tabContent">
+                    <div class="modsBox">
+                        <ul class="mods">
+                            <li class="modsWpr">
+                              <span class="thumbActive" data-tem="tem1" data-filterid="IN1">
+                                <img data-src="thumbs/1.png" alt="模版1">
+                              </span>
+                              <span data-tem="tem2" data-filterid="IN7">
+                                <img data-src="thumbs/2.png" alt="模版2">
+                              </span>
+                              <span data-tem="tem3" data-filterid="FR3">
+                                <img data-src="thumbs/3.png" alt="模版3">
+                              </span>
+                              <span data-tem="tem4" data-filterid="SS1">
+                                <img data-src="thumbs/4.png" alt="模版4">
+                              </span>
+                              <span data-tem="tem5" data-filterid="PO3">
+                                <img data-src="thumbs/5.png" alt="模版5">
+                              </span>
+                              <span data-tem="tem6" data-filterid="YU3">
+                                <img data-src="thumbs/6.png" alt="模版6">
+                              </span>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="btns">
+                <div class="otherBtn">
+                    <img data-src="common/p4_back.png" class="p4_back" alt="">
+                    <img data-src="common/p4_save.png" class="saveBtn saveInApp" alt="" style="display: none">
+                    <img data-src="common/p4_saveOutApp.png" class="saveBtn saveOutApp" alt="">
+                </div>
+            </div>
+        </li>
+    </ul>
+    <!-- p4 end -->
+</section>
+<!-- common plugins -->
+<!--loading部分-->
+<section class="loading mask run">
+    <ul class="loadWpr">
+        <li class="load">
+            <img src="assets/img/common/loading.png" class="loadingIcon" alt="">
+            <var></var>
+        </li>
+    </ul>
+</section>
+<!-- 需要预加载图片部分（包含各种弹窗，结果页的模版）-->
+<section class="preLoad">
+    <ul class="mask errMsg" style="display:none;">
+        <li class="errMsgWpr p-r">
+            <div class="errMsgIn p-r">
+                <var></var>
+                <!-- <button class="commonBtn">好的</button> -->
+                <img data-src="common/p4_ok.png" alt="">
+            </div>
+        </li>
+    </ul>
+
+    <!--<ul class="selectBox mask" style="display:none;z-index:590">-->
+        <!--<li class="owpr p-r dialog-sty">-->
+            <!--<a href="javascript:void(0)" id="cameraBtn">-->
+                <!--<img data-src="common/cameraBtn.png" alt="">-->
+            <!--</a>-->
+            <!--<a href="javascript:void(0)" id="galleryBtn">-->
+                <!--<img data-src="common/albumBtn.png" alt="">-->
+            <!--</a>-->
+        <!--</li>-->
+    <!--</ul>-->
+
+
+    <div class="saveSucToast" style="display:none">保存成功</div>
+
+    <input type="file" id="inputFile" accept="image/*" style="width:0;height:0;position:absolute;top:0;left:-91846px;"/>
+
+    <!--cofirm 弹出层-->
+    <!--<ul class="confirmBox mask">-->
+        <!--<li class="comfirm">-->
+            <!--<var>是否放弃正在编辑的内容</var>-->
+            <!--<img data-src="common/confirmNo.png" alt="" class="no">-->
+            <!--<img data-src="common/confirmYes.png" alt="" class="yes">-->
+        <!--</li>-->
+    <!--</ul>-->
+    <!--图标保存弹出层-->
+    <ul class="shareImgBox mask">
+        <li class="shareInnerBox">
+            <img alt="">
+            <p>长按保存图片哦 ~</p>
+        </li>
+    </ul>
+    <img class="cover cover1" data-src="borders/1.png"
+         style="position:absolute;top:-999rem;right:999rem;width:100%;z-index:166;" alt="">
+    <img class="cover cover2" data-src="borders/2.png"
+         style="position:absolute;top:-999rem;right:999rem;width:100%;z-index:166;" alt="">
+    <img class="cover cover3" data-src="borders/3.png"
+         style="position:absolute;top:-999rem;right:999rem;width:100%;z-index:166;" alt="">
+    <img class="cover cover4" data-src="borders/4.png"
+         style="position:absolute;top:-999rem;right:999rem;width:100%;z-index:166;" alt="">
+    <img class="cover cover5" data-src="borders/5.png"
+         style="position:absolute;top:-999rem;right:999rem;width:100%;z-index:166;" alt="">
+    <img class="cover cover6" data-src="borders/6.png"
+         style="position:absolute;top:-999rem;right:999rem;width:100%;z-index:166;" alt="">
+    <img class="FR3" data-src="filters/FR3.png"
+         style="position:absolute;top:-999rem;right:999rem;width:100%;z-index:166;" alt="">
+    <img class="YU3" data-src="filters/YU3.png"
+         style="position:absolute;top:-999rem;right:999rem;width:100%;z-index:166;" alt="">
+    <img class="SS1" data-src="filters/SS1.png"
+         style="position:absolute;top:-999rem;right:999rem;width:100%;z-index:166;" alt="">
+    <img class="IN1" data-src="filters/IN1.png"
+         style="position:absolute;top:-999rem;right:999rem;width:100%;z-index:166;" alt="">
+    <img class="IN7" data-src="filters/IN7.png"
+         style="position:absolute;top:-999rem;right:999rem;width:100%;z-index:166;" alt="">
+    <img class="PO3" data-src="filters/PO3.png"
+         style="position:absolute;top:-999rem;right:999rem;width:100%;z-index:166;" alt="">
+    <canvas id="filterCanvas" style="position:absolute;z-index:166;top:-999rem;right:999rem;"></canvas>
+    <!--<canvas id="testCanvas" width="700" height="700"></canvas>-->
+</section>
+</body>
+</html>

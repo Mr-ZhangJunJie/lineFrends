@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>B612咔叽</title>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="https://h5-act.kajicam.com/kajicam/favicon.ico" type="image/x-icon">
+    <style media="screen">
+      *{
+        margin:0;padding:0;font-style:normal;
+      }
+      body,html{
+        height:100%;
+      }
+      a:hover,a:active,a:visited,a:link,a:focus{
+          -webkit-tap-highlight-color:rgba(0,0,0,0);
+          -webkit-tap-highlight-color: transparent;
+      }
+      #app{
+        opacity: 0;transition: all .3s;position: relative;width:100%;max-width: 750px;
+        background-color: #F5F5F5;height:100%;box-sizing: border-box;padding-bottom:1rem;
+        display: flex;flex-direction: column;justify-content: center;align-items: center;
+      }
+      #app span{
+        width:1.38rem;line-height: 1;margin-bottom: .2rem;
+      }
+      #app img{
+        width:100%;
+      }
+      #app img.btn{
+        position: absolute;
+        width:38.26%;top:8.26rem;left:50%;transform: translate(-50%, 0);
+      }
+      .tip{
+        color:#6d6d6d;font-size: .32rem;position: absolute;width:100%;max-width: 750px;top:.45rem;text-align: center;font-weight: bold;z-index:66;
+      }
+      var{
+        font-size: .36rem;color:#000;
+      }
+      small{
+        color:#C2C2C2;font-size: .2rem;margin-top:.08rem;line-height: 1
+      }
+      .btn1,.btn2{
+        width:5rem;line-height: .88rem;border-radius: .44rem;font-size: .3rem;text-decoration: none;text-align: center;
+      }
+      .btn1{
+        background:rgba(89,179,182,1);color:#fff;margin-top:.63rem;
+      }
+      .btn2{
+        border:.026rem solid rgba(89,179,182,1);color:#59B3B6;margin-top:.2rem;
+      }
+      .showStatus{
+        width:100%;
+        display: flex;flex-direction: column;justify-content: center;align-items: center;
+      }
+    </style>
+  </head>
+  <script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?6f5fe13f12d3573779a4c46005b1c5e5";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vConsole/3.2.0/vconsole.min.js"></script> -->
+<body>
+  <script type="text/javascript">
+  !function(e,t){var n=e.documentElement,i="orientationchange"in window?"orientationchange":"resize",d=(/iPad|iPhone|iPod/.test(navigator.userAgent)&&!window.MSStream,function(){var t=n.clientWidth;t&&(t>=750?(t=750,e.body.style.width="750px"):e.body.style.width=t+"px",n.style.fontSize=100*(t/750)+"px",n.dataset.width=t,n.dataset.percent=100*(t/750))});d(),e.documentElement.classList.add("iosx"+t.devicePixelRatio),e.addEventListener&&t.addEventListener(i,d,!1)}(document,window)
+  // console.log(autoPix);
+
+  </script>
+  <div class="tip">
+    已安装？点击右上角用浏览器打开
+  </div>
+  <div id="app" >
+    <span></span>
+    <var>B612咔叽:点缀你的自然美</var>
+    <div class="showStatus" style="display:none">
+      <a href="javascript:void(0)" class="btn1">参与活动</a>
+      <small>如未安装B612咔叽，请先下载安装</small>
+      <a href="javascript:void(0)" class="btn2">下载b612咔叽</a>
+    </div>
+  </div>
+  <!-- <button type="button" class="debugReload" onclick="window.location.reload()" style="display:none;z-index:99999;left:0;padding:.2rem;top:75%;border-radius: .12rem;font-size:.32rem;position:fixed;background-color:#67c23a;color:#fff;">reload</button> -->
+</body>
+<script type="text/javascript">
+// var vConsole = new VConsole();
+var isIos = navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;
+var isAnd = navigator.userAgent.match(/Android/i) ? true : false;
+var u = navigator.userAgent, app = navigator.appVersion;
+var showStatus = document.querySelector('.showStatus')
+var btn1 = document.querySelector('.btn1')
+var btn2 = document.querySelector('.btn2')
+// /**-- 判断是否在微信浏览器中打开 --**/
+function is_weixn(){
+  var ua = navigator.userAgent.toLowerCase();
+  if(ua.match(/MicroMessenger/i)=="micromessenger") {
+    return true;
+  } else { return false; }
+  }
+  /**-- 判断是否在新浪微博浏览器中打开 --**/
+  function is_weibo(){
+    var ua = navigator.userAgent;
+    if(ua.indexOf('Weibo') > -1) { return true;
+    } else { return false; }
+}
+//
+var actName = 'http://h5-act-beta.kajicam.com/kajicam/2019/comicsBook/index.html'
+var contentPath = 'inappBrowser?url=' + actName,
+    storeUrl = 'https://lnk0.com/easylink/ELB58g88',
+    b612UniversalLink = 'https://ul-b612.snowcam.cn/app/' + contentPath + '&storeURL=' + storeUrl,
+    b612SchemeContentPath = 'b612cnb://' + contentPath;
+
+// 咔叽导量 - 微博微信
+  var img = new Image()
+  img.src = './img/logo.png'
+  img.onload = function() {
+    document.querySelector('#app span').appendChild(this)
+    document.querySelector('#app').style.opacity = 1
+  }
+//
+//   // document.querySelector('.debugReload').innerText = 'is_weibo:' + is_weibo() + ';is_weixn:' + is_weixn()
+  if(isIos) {
+    window.location.href = b612UniversalLink
+  }
+  if(!is_weixn() && !is_weibo()) {
+    showStatus.style.display = "flex"
+    btn1.onclick = function() {
+      window.location.href = b612SchemeContentPath
+    }
+    btn2.onclick = function() {
+      window.location.href = b612UniversalLink
+    }
+    if (isAnd) {
+      // window.location.href = 'http://a.app.qq.com/o/simple.jsp?pkgname=com.campmobile.snowcamera&ckey=CK1352056299878&android_scheme=b612cn%3A%2F%2FinappBrowser%3Furl%3D' + encodeURIComponent(actName)
+      var ifr = document.createElement('iframe');
+      ifr.src = b612SchemeContentPath;
+      ifr.style.display = 'none';
+      document.body.appendChild(ifr);
+      setTimeout(function() {
+          document.body.removeChild(ifr);
+      }, 2000);
+      // window.location.href = 'http://a.app.qq.com/o/simple.jsp?pkgname=com.campmobile.snowcamera&ckey=CK1352056299878&android_scheme=b612cn%3A%2F%2Fchaopai%3Flanding%3Dcpactivity%26activityId%3D9'
+    }
+  }
+</script>
+</html>
